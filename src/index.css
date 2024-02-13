@@ -11,6 +11,10 @@
 	font-family: 'Lato', sans-serif;
 }
 
+body {
+	background-color: #181a1d;
+}
+
 a,
 ul,
 li {

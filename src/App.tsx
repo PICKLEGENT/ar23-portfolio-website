@@ -4,8 +4,8 @@ import { Home, Project } from "./pages"
 const App = () => {
   return (
     <Routes>
-      <Route path="/" /> {<Home />}
-      <Route path="/project" /> {<Project />}
+      <Route path="/" Component={Home} />
+      <Route path="/project" Component={Project} />
     </Routes>
   )
 }
