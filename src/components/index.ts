@@ -6,6 +6,7 @@ import CustomInput from './CustomInput';
 import CustomHeading from './CustomHeading';
 import Greeting from './Greeting';
 import About from './About';
+import Skills from './Skills';
 import Footer from './Footer';
 
 export {
@@ -17,5 +18,6 @@ export {
 	CustomHeading,
 	Greeting,
 	About,
+	Skills,
 	Footer,
 };
