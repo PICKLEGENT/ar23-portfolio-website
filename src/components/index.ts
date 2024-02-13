@@ -7,6 +7,8 @@ import CustomHeading from './CustomHeading';
 import Greeting from './Greeting';
 import About from './About';
 import Skills from './Skills';
+import ProjectCard from './ProjectCard';
+import Portfolio from './Portfolio';
 import Footer from './Footer';
 
 export {
@@ -19,5 +21,7 @@ export {
 	Greeting,
 	About,
 	Skills,
+	ProjectCard,
+	Portfolio,
 	Footer,
 };

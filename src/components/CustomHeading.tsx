@@ -2,7 +2,7 @@ import { CustomHeadingProps } from "../types"
 
 const CustomHeading = ({ title }: CustomHeadingProps) => {
     return (
-        <span className="my-50 text-8xl font-bold text-primary-white tracking-widest">{title}</span>
+        <p className="my-50 text-8xl font-bold text-primary-white tracking-widest">{title}</p>
     )
 }
 
