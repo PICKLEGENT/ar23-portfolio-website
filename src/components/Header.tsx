@@ -2,15 +2,9 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
     return (
-        <Link to='/' style={{
-            marginTop: '60px',
-            fontWeight: '600',
-            fontSize: '96px',
-            color: '#fff',
-            textAlign: 'center',
-            letterSpacing: '0.1rem',
-            textTransform: 'uppercase'
-        }}>ar23</Link>
+        <header className="flex justify-center items-center mt-60 font-bold text-8xl tracking-widest uppercase text-primary-white">
+            <Link to='/'>ar23</Link>
+        </header>
     )
 }
 
