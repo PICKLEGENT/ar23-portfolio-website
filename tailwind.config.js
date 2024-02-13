@@ -31,6 +31,7 @@ export default {
       colors: {
         'bg-primary-blue': '#181a1d',
         'primary-white': '#ffffff',
+        'primary-grey': '#858585',
       },
     },
   },

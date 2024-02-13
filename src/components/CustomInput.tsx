@@ -1,6 +1,8 @@
-const CustomInput = () => {
+import { CustomInputProps } from "../types"
+
+const CustomInput = ({ type, name, autocomplete, placeholder }: CustomInputProps) => {
     return (
-        <div>CustomInput</div>
+        <input type={type} name={name} placeholder={placeholder} autoComplete={autocomplete} className="w-600 mb-50 p-2 tracking-wider bg-transparent text-primary-grey border-b border-primary-gray focus:text-primary-white border-primary-white duration-300 ease-in-out" />
     )
 }
 

@@ -9,6 +9,7 @@ import About from './About';
 import Skills from './Skills';
 import ProjectCard from './ProjectCard';
 import Portfolio from './Portfolio';
+import Contacts from './Contacts';
 import Footer from './Footer';
 
 export {
@@ -23,5 +24,6 @@ export {
 	Skills,
 	ProjectCard,
 	Portfolio,
+	Contacts,
 	Footer,
 };

@@ -6,3 +6,10 @@ export interface ProjectCardProps {
 	projectName: string;
 	projectRole: string;
 }
+
+export interface CustomInputProps {
+	type: string;
+	name: string;
+	placeholder: string;
+	autocomplete: string;
+}

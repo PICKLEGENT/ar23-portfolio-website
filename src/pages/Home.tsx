@@ -1,4 +1,4 @@
-import { About, Banner, Greeting, Header, Navbar, Portfolio, Skills } from "../components"
+import { About, Banner, Contacts, Greeting, Header, Navbar, Portfolio, Skills } from "../components"
 
 const Home = () => {
     return (
@@ -10,6 +10,7 @@ const Home = () => {
             <About />
             <Skills />
             <Portfolio />
+            <Contacts />
         </>
     )
 }
