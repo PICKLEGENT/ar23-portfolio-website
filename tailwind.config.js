@@ -10,9 +10,11 @@ export default {
       'sans': ['Lato', 'sans-serif'],
       },
       spacing: {
+      '30' : '30px',
       '50' : '50px',
       '60' : '60px',
       '100' : '100px',
+      '120' : '120px',
       '150' : '150px',
       },
       colors: {
