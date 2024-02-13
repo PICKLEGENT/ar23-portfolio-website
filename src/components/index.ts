@@ -5,6 +5,7 @@ import CustomButton from './CustomButton';
 import CustomInput from './CustomInput';
 import CustomHeading from './CustomHeading';
 import Greeting from './Greeting';
+import About from './About';
 import Footer from './Footer';
 
 export {
@@ -15,5 +16,6 @@ export {
 	CustomInput,
 	CustomHeading,
 	Greeting,
+	About,
 	Footer,
 };
