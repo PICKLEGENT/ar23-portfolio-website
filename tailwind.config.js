@@ -11,6 +11,8 @@ export default {
       },
       spacing: {
       '60' : '60px',
+      '100' : '100px',
+      '150' : '150px',
       },
       colors: {
         'bg-primary-blue': '#181a1d',
