@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom"
+
 const Navbar = () => {
     return (
-        <div>Navbar</div>
+        <nav className="flex justify-center items-center">
+            <Link to='/' >About me</Link>
+            <Link to='/' className="mx-60">Portfolio</Link>
+            <Link to='/' >Contact</Link>
+        </nav>
     )
 }
 
