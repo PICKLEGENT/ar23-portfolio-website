@@ -1,10 +1,10 @@
-export const skillsList = [
-	'HTML',
-	'CSS',
-	'NextJS',
-	'JS/TS',
-	'React',
-	'SQL',
-	'NodeJS',
-	'Figma',
+export const listOfSkills = [
+	{
+		num: 1,
+		skills: ['HTML', 'CSS', 'NextJS', 'JS/TS'],
+	},
+	{
+		num: 2,
+		skills: ['React', 'SQL', 'NodeJS', 'Figma'],
+	},
 ];
