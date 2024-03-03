@@ -1,4 +1,4 @@
-import { Banner, CustomHeading, Header, HomeProjectCard, SmallInfo } from "../components"
+import { Banner, CustomHeading, Footer, Header, HomeProjectCard, SmallInfo } from "../components"
 import { listOfWorks } from "../constants"
 
 const Home = () => {
@@ -14,6 +14,7 @@ const Home = () => {
                         <HomeProjectCard key={work} title={work} />
                     ))}
                 </section>
+                <Footer />
             </main>
         </>
     )

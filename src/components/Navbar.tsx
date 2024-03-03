@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav className="flex justify-center items-center text-lg">
             <Link to='/' >About me</Link>
             <Link to='/' className="mx-60">Portfolio</Link>
-            <Link to='/' >Contact</Link>
+            <Link to='/contact' >Contact</Link>
         </nav>
     )
 }

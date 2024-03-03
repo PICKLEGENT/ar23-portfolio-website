@@ -26,3 +26,7 @@ button {
 ::-webkit-scrollbar {
 	display: none;
 }
+
+footer {
+	filter: drop-shadow(0 -50px 100px rgba(127, 129, 128, 1));
+}
