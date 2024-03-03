@@ -3,7 +3,7 @@ import { Banner, Header } from "../components"
 const Home = () => {
     return (
         <>
-            <main className="bg-primary-grey">
+            <main className="tracking-wider">
                 <Header />
                 <Banner />
             </main>

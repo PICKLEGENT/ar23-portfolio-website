@@ -8,6 +8,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import HomeProjectCard from './HomeProjectCard';
 import PortfolioProjectCard from './PortfolioProjectCard';
+import SmallInfo from './SmallInfo';
 
 export {
 	Avatar,
@@ -20,4 +21,5 @@ export {
 	Footer,
 	HomeProjectCard,
 	PortfolioProjectCard,
+	SmallInfo,
 };

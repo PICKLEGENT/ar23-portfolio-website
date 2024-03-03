@@ -1,6 +1,8 @@
-const CustomHeading = () => {
+import { CustomButtonProps } from "../types"
+
+const CustomHeading = ({ title }: CustomButtonProps) => {
     return (
-        <div>CustomHeading</div>
+        <h1 className="text-4xl text-primary-black">{title}</h1>
     )
 }
 
