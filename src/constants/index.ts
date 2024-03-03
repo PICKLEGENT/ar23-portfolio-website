@@ -8,3 +8,10 @@ export const listOfSkills = [
 		skills: ['React', 'SQL', 'NodeJS', 'Figma'],
 	},
 ];
+
+export const listOfWorks = [
+	'Weather App',
+	'Car Showcase Website',
+	'Fitness App',
+	'Online Shop',
+];
