@@ -1,6 +1,6 @@
-import { CustomButtonProps } from "../types"
+import { CustomHeadingProps } from "../types"
 
-const CustomHeading = ({ title }: CustomButtonProps) => {
+const CustomHeading = ({ title }: CustomHeadingProps) => {
     return (
         <h1 className="text-4xl text-primary-black mb-25">{title}</h1>
     )

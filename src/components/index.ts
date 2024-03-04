@@ -9,6 +9,7 @@ import Footer from './Footer';
 import HomeProjectCard from './HomeProjectCard';
 import PortfolioProjectCard from './PortfolioProjectCard';
 import SmallInfo from './SmallInfo';
+import Contacts from './Contacts';
 
 export {
 	Avatar,
@@ -22,4 +23,5 @@ export {
 	HomeProjectCard,
 	PortfolioProjectCard,
 	SmallInfo,
+	Contacts,
 };
