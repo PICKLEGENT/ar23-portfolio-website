@@ -26,3 +26,7 @@ button {
 ::-webkit-scrollbar {
 	display: none;
 }
+
+.avatar {
+	filter: drop-shadow(0 0 7px rgba(127, 129, 128, 1));
+}

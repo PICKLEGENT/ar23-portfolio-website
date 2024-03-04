@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             <main className="tracking-wider bg-primary-white">
-                <Header />
+                <Header textColor={'text-primary-white'} bgColor={'bg-primary-grey'} />
                 <Banner />
                 <SmallInfo />
                 <section className="mx-120 my-100 ">

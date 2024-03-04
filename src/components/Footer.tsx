@@ -16,8 +16,8 @@ const Footer = () => {
                     <div>
                         <p className="mb-5 uppercase font-bold text-xs text-primary-grey">socials</p>
                         <a href='https://vk.com/s_k_i_b_i_d_i' target="_blank" className="font-semibold text-base text-primary-white">VK</a>
-                        <a href='https://github.com/PICKLEGENT' className="mx-50 font-semibold text-base text-primary-white">GitHub</a>
-                        <a href='https://www.instagram.com/picklegent?igsh=Ymt3N3o5dWpnYm5u&utm_source=qr' className="font-semibold text-base text-primary-white">Instagram</a>
+                        <a href='https://github.com/PICKLEGENT' target="_blank" className="mx-50 font-semibold text-base text-primary-white">GitHub</a>
+                        <a href='https://www.instagram.com/picklegent?igsh=Ymt3N3o5dWpnYm5u&utm_source=qr' target="_blank" className="font-semibold text-base text-primary-white">Instagram</a>
                     </div>
                 </div>
                 <p className="text-center font-light text-base text-primary-grey leading-relaxed">Designed by<br /> Andrew Romanov</p>

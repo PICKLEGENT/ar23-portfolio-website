@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import { CustomButton } from "."
-import Hexagon from '/src/assets/images/hexagon.svg'
 
 const Contacts = () => {
     return (
@@ -11,9 +10,8 @@ const Contacts = () => {
                     <div className="mx-50"></div>
                     <CustomButton title={'+ 7 925 200 96 60'} href={'tel:+79252009660'} />
                 </div>
-                <Link to='/Contact' className="flex relative h-250 justify-center text-primary-white overflow-hidden">
-                    <img src={Hexagon} alt="hexagon" />
-                    <p className="absolute top-[41.5%] text-4xl">Get in touch</p>
+                <Link to='/Contact' className="flex justify-center items-center p-25 relative mr-120 text-3xl text-primary-white border border-primary-white rounded-xl">
+                    <span>Get in touch</span>
                 </Link>
             </div>
         </section>
