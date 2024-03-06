@@ -23,3 +23,7 @@ export interface CustomInputProps {
 	placeholder?: string;
 	autocomplete?: string;
 }
+
+export interface TransitionProps {
+	OgComponent: string;
+}

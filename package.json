@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-email/render": "^0.0.12",
+    "framer-motion": "^11.0.8",
     "nodemailer": "^6.9.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
