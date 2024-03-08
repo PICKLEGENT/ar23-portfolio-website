@@ -23,6 +23,14 @@ button {
 	outline: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px #1c1d20 inset !important;
+	-webkit-text-fill-color: #d9d9d9 !important;
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -34,8 +42,7 @@ button {
 
 .avatar:hover {
 	transform: scale(1.04);
-	filter: drop-shadow(0 0 15px rgba(127, 129, 128, 1));
-	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.75));
+	filter: drop-shadow(0 0 10px rgba(127, 129, 128, 1));
 }
 
 .slide-in {
@@ -48,7 +55,7 @@ button {
 	transform-origin: bottom;
 }
 
-.slide-in {
+.slide-out {
 	position: fixed;
 	top: 0;
 	left: 0;

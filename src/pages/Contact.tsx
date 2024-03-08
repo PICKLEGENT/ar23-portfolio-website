@@ -46,8 +46,8 @@ const Contact = () => {
                 <div>
                     <div className="flex flex-col">
                         <h3 className="font-bold text-primary-grey uppercase">contact details</h3>
-                        <a href="mailto:romanov.resume@yandex.ru" className="mt-25 mb-4 font-light text-xl text-primary-white">john@doe.com</a>
-                        <a href='tel:+79252009660' className="font-light text-xl text-primary-white">8 925 200 96 60</a>
+                        <a href="mailto:romanov.resume@yandex.ru" className="mt-25 mb-4 font-light text-xl text-primary-white">romanov.resume@yandex.ru</a>
+                        <a href='tel:+79252009660' className="font-light text-xl text-primary-white">+7 925 200 96 60</a>
                     </div>
                     <div className="flex flex-col mt-150">
                         <h3 className="font-bold text-primary-grey uppercase">socials</h3>

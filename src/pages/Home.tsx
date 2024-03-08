@@ -1,22 +1,11 @@
-import { useEffect, useState } from "react"
-import { Banner, Contacts, CustomHeading, Footer, Header, HomeProjectCard, Loader, SmallInfo } from "../components"
+import { Banner, Contacts, CustomHeading, Footer, Header, HomeProjectCard, SmallInfo } from "../components"
 import { listOfWorks } from "../constants"
+import { Link } from "react-router-dom";
 // import transition from "../transition"
 
 const Home = () => {
-    const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        const preloader = () => {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 1500);
-        };
-        preloader();
-    }, [])
-
-    return isLoading ? (
-        <Loader />) : (
+    return (
         <>
             <main className="tracking-wider bg-primary-white">
                 <Header textColor={'text-primary-white'} bgColor={'bg-primary-grey'} />
@@ -27,6 +16,9 @@ const Home = () => {
                     {listOfWorks.map((work) => (
                         <HomeProjectCard key={work} title={work} />
                     ))}
+                    <div className="flex justify-center items-center">
+                        <Link to='/portfolio' className='p-4 text-center font-light text-2xl text-primary-white tracking-wider border border-primary-black rounded-xl bg-primary-black'>See more</Link>
+                    </div>
                 </section>
                 <Contacts />
                 <Footer />
