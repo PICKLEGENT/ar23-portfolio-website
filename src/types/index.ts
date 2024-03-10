@@ -1,6 +1,6 @@
 export interface HeaderProps {
 	textColor: string;
-	bgColor: string;
+	bgColor?: string;
 }
 
 export interface CustomHeadingProps {
