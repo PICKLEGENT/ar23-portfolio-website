@@ -4,7 +4,7 @@ import { Avatar, CustomInput, Footer, Header } from "../components"
 const Contact = () => {
     return (
         <main className="tracking-wider bg-primary-black">
-            <Header textColor={'text-primary-white'} bgColor={'bg-primary-black'} />
+            <Header textColor={'text-primary-white'} bgColor={'bg-primary-black'} borderColor={'border-primary-white'} />
             <section className="flex justify-between items-center mx-120 my-100">
                 <h1 className="font-light text-6xl text-primary-white leading-relaxed">Send me a message<br />I’m gonna check this out</h1>
                 <div className="flex justify-center items-center">

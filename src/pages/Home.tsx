@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <main className="tracking-wider">
-                <Header textColor={'text-primary-dark'} bgColor={'bg-primary-white'} />
+                <Header textColor={'text-primary-dark'} bgColor={'bg-primary-white'} borderColor={'border-primary-black'} />
                 <Banner />
                 <SmallInfo />
                 <section className="mx-120 my-100 ">
@@ -17,7 +17,7 @@ const Home = () => {
                         <HomeProjectCard key={work} title={work} />
                     ))}
                     <div className="flex justify-center items-center">
-                        <Link to='/portfolio' className='p-4 text-center font-light text-2xl text-primary-white tracking-wider border border-primary-black rounded-xl bg-primary-black'>See more</Link>
+                        <Link to='/portfolio' className='p-4 text-center text-2xl text-primary-black tracking-wider border-2 border-primary-black border-dashed rounded-xl'>See more</Link>
                     </div>
                 </section>
                 <Contacts />

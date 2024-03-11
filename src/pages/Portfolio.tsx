@@ -1,9 +1,14 @@
-import { Footer, Header, PortfolioProjectCard } from "../components"
+import { CustomHeading, Footer, Header, PortfolioProjectCard } from "../components"
 
 const Portfolio = () => {
     return (<>
-        <Header textColor={'text-primary-white'} bgColor={'bg-primary-grey'} />
-        <div className="flex flex-wrap justify-between items-center mx-120 my-100">
+        <Header textColor={'text-primary-black'} bgColor={'bg-primary-white'} borderColor={'border-primary-black'} />
+        <div className="text-center">
+            <CustomHeading title={'Portfolio'} />
+        </div>
+        <div className="flex flex-wrap justify-between items-center mx-120 mb-60">
+            <PortfolioProjectCard />
+            <PortfolioProjectCard />
             <PortfolioProjectCard />
             <PortfolioProjectCard />
             <PortfolioProjectCard />
