@@ -17,7 +17,7 @@ const Home = () => {
                         <HomeProjectCard key={work} title={work} />
                     ))}
                     <div className="flex justify-center items-center">
-                        <Link to='/portfolio' className='p-4 text-center text-2xl text-primary-black tracking-wider border-2 border-primary-black border-dashed rounded-xl'>See more</Link>
+                        <Link to='/portfolio' className='p-2.5 text-center text-2xl text-primary-black tracking-wider border border-primary-black rounded-xl bg-primary-white shadow-drop'>See more</Link>
                     </div>
                 </section>
                 <Contacts />

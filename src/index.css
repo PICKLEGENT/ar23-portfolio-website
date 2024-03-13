@@ -36,13 +36,11 @@ input:-webkit-autofill:active {
 }
 
 .avatar {
-	filter: drop-shadow(0 0 7px rgba(127, 129, 128, 1));
 	transition: 0.5s ease 0s;
 }
 
 .avatar:hover {
 	transform: scale(1.04);
-	filter: drop-shadow(0 0 10px rgba(127, 129, 128, 1));
 }
 
 .slide-in {

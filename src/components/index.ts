@@ -11,6 +11,7 @@ import PortfolioProjectCard from './PortfolioProjectCard';
 import SmallInfo from './SmallInfo';
 import Contacts from './Contacts';
 import Loader from './Loader';
+import ContactForm from './ContactForm';
 
 export {
 	Avatar,
@@ -26,4 +27,5 @@ export {
 	SmallInfo,
 	Contacts,
 	Loader,
+	ContactForm,
 };
