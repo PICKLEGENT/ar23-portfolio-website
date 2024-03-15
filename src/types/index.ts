@@ -28,3 +28,8 @@ export interface CustomInputProps {
 export interface TransitionProps {
 	OgComponent: string;
 }
+
+export interface PortfolioProjectCardProps {
+	title: string;
+	preview: string;
+}

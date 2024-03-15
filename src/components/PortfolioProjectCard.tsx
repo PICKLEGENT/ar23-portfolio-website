@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom"
+import { PortfolioProjectCardProps } from "../types"
 
-const PortfolioProjectCard = () => {
+const PortfolioProjectCard = ({ title, preview }: PortfolioProjectCardProps) => {
     return (
         <section>
-            <Link to='/' className="flex justify-center items-center p-100 text-3xl tracking-wider text-primary-black bg-primary-white border-2 border-primary-black border-dashed rounded-2xl shadow-drop">Pet project</Link>
+            <Link to='/' className="flex justify-center items-center p-100 text-2xl tracking-wider text-primary-black border-2 border-primary-black border-dashed rounded-2xl shadow-drop"
+                style={{
+                    backgroundImage: `url(${preview})`,
+                    backgroundPosition: 'top',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                }}>
+                <span className="p-2.5 text-center border-2 border-primary-black border-dashed rounded-2xl bg-primary-white shadow-drop">{title}</span>
+            </Link>
         </section>
     )
 }
