@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <main className="tracking-wider">
-                <Header textColor={'text-primary-dark'} bgColor={'bg-primary-white'} borderColor={'border-primary-black'} />
+                <Header />
                 <Banner />
                 <SmallInfo />
                 <section className="mx-120 my-100 ">

@@ -1,8 +1,16 @@
 // import transition from "../transition"
 
+import { Footer, Header } from "../components"
+
 const Project = () => {
     return (
-        <div>Project</div>
+        <>
+            <Header />
+            <main>
+
+            </main>
+            <Footer />
+        </>
     )
 }
 

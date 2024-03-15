@@ -4,7 +4,7 @@ import { PortfolioProjectCardProps } from "../types"
 const PortfolioProjectCard = ({ title, preview }: PortfolioProjectCardProps) => {
     return (
         <section>
-            <Link to='/' className="flex justify-center items-center p-100 text-2xl tracking-wider text-primary-black border-2 border-primary-black border-dashed rounded-2xl shadow-drop"
+            <Link to='/project' className="flex justify-center items-center p-100 text-2xl tracking-wider text-primary-black border-2 border-primary-black border-dashed rounded-2xl shadow-drop"
                 style={{
                     backgroundImage: `url(${preview})`,
                     backgroundPosition: 'top',
