@@ -18,7 +18,7 @@ const Footer = () => {
                         <div className="flex justify-start items-center font-bold">
                             <a href="https://github.com/PICKLEGENT" target="_blanc" className="mt-5 text-lg text-zinc-900 dark:text-neutral-100">GitHub</a>
                             <a href="https://t.me/AndrewRom" target="_blanc" className="mt-5 mx-12 text-lg text-zinc-900 dark:text-neutral-100">Telegam</a>
-                            <a href="/" target="_blanc" className="mt-5 text-lg text-zinc-900 dark:text-neutral-100">Instagram</a>
+                            <a href="https://www.instagram.com/picklegent?igsh=Ymt3N3o5dWpnYm5u&utm_source=qr" target="_blanc" className="mt-5 text-lg text-zinc-900 dark:text-neutral-100">Instagram</a>
                         </div>
                     </div>
                 </div>

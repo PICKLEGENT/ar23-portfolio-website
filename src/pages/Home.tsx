@@ -3,7 +3,6 @@ import { listOfProjects } from "../constants";
 import { CustomHeading, Footer, Header, SmallInfo, Ticker } from "../components";
 
 const Home = () => {
-
     return (
         <>
             <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
@@ -33,7 +32,9 @@ const Home = () => {
                         </Link>
                     ))}
                     <div className="mt-12 text-center font-semibold text-xl text-zinc-900 dark:text-neutral-100">
-                        <Link to='/portfolio' className="px-5 py-2.5 border border-purple-800 dark:border-yellow-400 rounded-lg hover:text-neutral-100 hover:dark:text-zinc-900 hover:bg-purple-800 hover:dark:bg-yellow-400 duration-300 ease-in">See more</Link>
+                        <Link to='/portfolio' className="px-5 py-2.5 border border-purple-800 dark:border-yellow-400 rounded-lg hover:text-neutral-100 hover:dark:text-zinc-900 hover:bg-purple-800 hover:dark:bg-yellow-400 duration-300 ease-in">
+                            See more
+                        </Link>
                     </div>
                 </section>
                 <Footer />
