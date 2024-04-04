@@ -2,13 +2,17 @@ export interface CustomHeadingProps {
 	title: string;
 }
 
+export interface SmallInfoProps {
+	title: string;
+	text: string;
+}
+
 export interface HomeProjectCardProps {
 	title: string;
 }
 
 export interface CustomButtonProps {
 	title: string;
-	href: string;
 }
 
 export interface CustomInputProps {

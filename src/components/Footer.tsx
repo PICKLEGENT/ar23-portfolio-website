@@ -1,26 +1,30 @@
 const Footer = () => {
     return (
-        <footer className="bg-primary-black">
-            <section className="mx-120 pb-60">
+        <footer className="mt-24">
+            <section className="flex justify-between items-center text-2xl">
+                <div className="h-[1px] bg-purple-800 dark:bg-yellow-400 w-1/4"></div>
+                <a href="mailto:romanov.resume@yandex.ru" className="mx-2.5 2xl:mx-0 text-purple-800 dark:text-yellow-400">romanov.resume@yandex.ru</a>
+                <a href="tel:+79252009660" className="mx-2.5 2xl:mx-0 text-purple-800 dark:text-yellow-400 flex-shrink-0">8 925 200 96 60</a>
+                <div className="h-[1px] bg-purple-800 dark:bg-yellow-400 w-1/4"></div>
+            </section>
+            <section className="mt-24">
                 <div className="flex justify-between items-center">
-                    <div className="flex justify-start my-60">
-                        <div>
-                            <p className="mb-5 uppercase font-bold text-xs text-primary-grey">version</p>
-                            <p className="font-semibold text-base text-primary-white">2024 Edition</p>
-                        </div>
-                        <div className="mx-100">
-                            <p className="mb-5 uppercase font-bold text-xs text-primary-grey">local time</p>
-                            <p className="font-semibold text-base text-primary-white">12:40 PM</p>
-                        </div>
+                    <div className="mr-24">
+                        <h4 className="font-semibold text-sm text-neutral-500 uppercase">version</h4>
+                        <p className="mt-5 text-lg font-bold text-zinc-900 dark:text-neutral-100">2024 Edition</p>
                     </div>
                     <div>
-                        <p className="mb-5 uppercase font-bold text-xs text-primary-grey">socials</p>
-                        <a href='https://vk.com/s_k_i_b_i_d_i' target="_blank" className="font-semibold text-base text-primary-white">VK</a>
-                        <a href='https://github.com/PICKLEGENT' target="_blank" className="mx-50 font-semibold text-base text-primary-white">GitHub</a>
-                        <a href='https://www.instagram.com/picklegent?igsh=Ymt3N3o5dWpnYm5u&utm_source=qr' target="_blank" className="font-semibold text-base text-primary-white">Instagram</a>
+                        <h4 className="font-semibold text-sm text-neutral-500 uppercase">socials</h4>
+                        <div className="flex justify-start items-center font-bold">
+                            <a href="https://github.com/PICKLEGENT" target="_blanc" className="mt-5 text-lg text-zinc-900 dark:text-neutral-100">GitHub</a>
+                            <a href="https://t.me/AndrewRom" target="_blanc" className="mt-5 mx-12 text-lg text-zinc-900 dark:text-neutral-100">Telegam</a>
+                            <a href="/" target="_blanc" className="mt-5 text-lg text-zinc-900 dark:text-neutral-100">Instagram</a>
+                        </div>
                     </div>
                 </div>
-                <p className="text-center font-light text-base text-primary-grey leading-relaxed">Designed by<br /> Andrew Romanov</p>
+                <div className="text-center mt-24 font-semibold text-sm text-neutral-500">
+                    <p>Designed by<br />Andrew Romanov</p>
+                </div>
             </section>
         </footer>
     )

@@ -1,19 +1,8 @@
-export const listOfSkills = [
-	{
-		num: 1,
-		skills: ['HTML', 'CSS', 'NextJS', 'JS/TS'],
-	},
-	{
-		num: 2,
-		skills: ['React', 'SQL', 'NodeJS', 'Figma'],
-	},
-];
-
 export const listOfWorks = [
 	'Weather App',
+	'Unolingo',
 	'Car Showcase Website',
-	'Fitness App',
-	'Online Shop',
+	'Receipt Search App',
 ];
 
 export const portfolioWorks = [
@@ -25,11 +14,11 @@ export const portfolioWorks = [
 		projectLink: '',
 	},
 	{
-		projectName: 'Alumina',
-		projectDescription: 'Alumina',
-		projectPreview: '/src/assets/images/aluminaPreview.png',
+		projectName: 'Unolingo',
+		projectDescription: 'Clone Duolingo',
+		projectPreview: '',
 		projectImage: '',
-		projectLink: '',
+		projectLink: 'https://unolingo-tau.vercel.app/',
 	},
 	{
 		projectName: 'Car Showcase',
@@ -39,17 +28,24 @@ export const portfolioWorks = [
 		projectLink: '',
 	},
 	{
-		projectName: 'Portfolio',
-		projectDescription: 'Portfolio',
-		projectPreview: '/src/assets/images/portfolioPreview.png',
+		projectName: 'Alumina',
+		projectDescription: 'Online catalog of aluminum composite panels',
+		projectPreview: '/src/assets/images/aluminaPreview.png',
 		projectImage: '',
-		projectLink: '',
+		projectLink: 'https://alumina.shop/',
 	},
 	{
 		projectName: 'Fitness App',
 		projectDescription: 'Fitness App',
 		projectPreview: '/src/assets/images/fitnessAppPreview.png',
 		projectImage: '',
-		projectLink: 'https://alumina.shop/',
+		projectLink: '',
+	},
+	{
+		projectName: 'Receipt Search App',
+		projectDescription: 'Receipt Search App',
+		projectPreview: '/src/assets/images/fitnessAppPreview.png',
+		projectImage: '',
+		projectLink: '',
 	},
 ];

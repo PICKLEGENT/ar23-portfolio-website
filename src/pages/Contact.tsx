@@ -1,36 +1,79 @@
-import { Avatar, ContactForm, Footer, Header } from "../components"
-// import transition from "../transition"
+import { CustomButton, CustomHeading, Footer, Header } from "../components"
+import CustomInput from "../components/CustomInput"
+
 
 const Contact = () => {
     return (
-        <main className="tracking-wider">
-            <Header />
-            <section className="flex justify-between items-center mx-120 my-100">
-                <h1 className="p-2.5 text-6xl text-primary-black leading-relaxed border-2 border-primary-black border-dashed rounded-2xl bg-primary-white shadow-drop">Send me a message<br />I’m gonna check this out</h1>
-                <div className="flex justify-center items-center">
-                    <div className="mr-100 w-[1px] h-250 bg-primary-grey rotate-45"></div>
-                    <div className="w-[1px] h-250 bg-primary-grey rotate-45"></div>
+        <>
+            <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
+                <Header />
+                <div className="mt-24 text-center">
+                    <CustomHeading title="Send me a message. I’m gonna check this out." />
                 </div>
-                <Avatar />
-            </section>
-            <div className="flex justify-between mx-120">
-                <ContactForm />
-                <div>
-                    <div className="flex flex-col p-2.5 text-primary-black border-2 border-primary-black border-dashed rounded-2xl bg-primary-white shadow-drop">
-                        <h3 className="font-black uppercase">contact details</h3>
-                        <a href="mailto:romanov.resume@yandex.ru" className="my-4 text-xl">romanov.resume@yandex.ru</a>
-                        <a href='tel:+79252009660' className="text-xl">+7 925 200 96 60</a>
-                    </div>
-                    <div className="flex flex-col mt-150 p-2.5 border-2 border-primary-black border-dashed rounded-2xl bg-primary-white shadow-drop">
-                        <h3 className="font-black uppercase">socials</h3>
-                        <a href="https://vk.com/s_k_i_b_i_d_i" target="_blank" className="mt-4 text-xl">VK</a>
-                        <a href='https://github.com/PICKLEGENT' target="_blank" className="my-4 text-xl">GitHub</a>
-                        <a href='https://www.instagram.com/picklegent?igsh=Ymt3N3o5dWpnYm5u&utm_source=qr' target="_blank" className="text-xl">Instagram</a>
-                    </div>
+                <div className="mt-24">
+                    <form action="#">
+                        <ul>
+                            <li className="mt-12 flex justify-start items-start">
+                                <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0001</p>
+                                <div>
+                                    <CustomInput
+                                        label="What's your name?"
+                                        type="text"
+                                        name="user-name"
+                                        placeholder="John Doe"
+                                        autocomplete="given-name"
+                                    />
+                                </div>
+                            </li>
+                            <li className="mt-12 flex justify-start items-start">
+                                <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0010</p>
+                                <div>
+                                    <CustomInput
+                                        label="What's your email?"
+                                        type="email"
+                                        name="user-email"
+                                        placeholder="john@doe.com"
+                                        autocomplete="on"
+                                    />
+                                </div>
+                            </li>
+                            <li className="mt-12 flex justify-start items-start">
+                                <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0011</p>
+                                <div>
+                                    <CustomInput
+                                        label="What's the name of your organization?"
+                                        type="text"
+                                        name="user-organization"
+                                        placeholder="John & Doe"
+                                        autocomplete="none"
+                                    />
+                                </div>
+                            </li>
+                            <li className="mt-12 flex justify-start items-start">
+                                <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0100</p>
+                                <div>
+                                    <label htmlFor="message" className="block text-2xl text-purple-800 dark:text-yellow-400">Your message</label>
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        cols={50}
+                                        rows={5}
+                                        placeholder="Hello Andrew..."
+                                        autoComplete="none"
+                                        className="mt-5 text-xl text-zinc-900 dark:text-neutral-100 bg-neutral-100 dark:bg-zinc-900 resize-none"
+                                    >
+                                    </textarea>
+                                </div>
+                            </li>
+                        </ul>
+                        <div className="flex justify-center items-center mt-12">
+                            <CustomButton title="Send" />
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <Footer />
-        </main>
+                <Footer />
+            </main>
+        </>
     )
 }
 
