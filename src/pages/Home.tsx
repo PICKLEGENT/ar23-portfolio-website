@@ -13,10 +13,10 @@ const Home = () => {
                         <CustomHeading title={"Hi! I'm Andrew"} />
                     </div>
                     <div className="mt-12 text-left">
-                        <SmallInfo title={'Who am I?'} text={"I'm frontend developer. I like programming and pizza."} />
+                        <SmallInfo title={'Who am I?'} text={"I'm frontend developer. I like programming and pizza)"} />
                     </div>
                     <div className="mt-12 text-right">
-                        <SmallInfo title={'What can I do?'} text={"I'm frontend developer.I like programming and pizza."} />
+                        <SmallInfo title={'What can I do?'} text={"I can code ultra-super-cool single page application"} />
                     </div>
                 </section>
                 <section>

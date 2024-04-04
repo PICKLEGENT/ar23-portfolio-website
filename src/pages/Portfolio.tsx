@@ -7,8 +7,8 @@ const Portfolio = () => {
         <>
             <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
                 <Header />
-                <section className="mt-24 text-center">
-                    <CustomHeading title="Portfolio" />
+                <section className="mt-14 text-center">
+                    <CustomHeading title="My beautiful portfolio" />
                 </section>
                 <section>
                     <div className="flex flex-wrap justify-between items-center">
