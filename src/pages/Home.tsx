@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { listOfWorks } from "../constants";
+import { listOfProjects } from "../constants";
 import { CustomHeading, Footer, Header, SmallInfo, Ticker } from "../components";
 
 const Home = () => {
@@ -24,10 +24,10 @@ const Home = () => {
                     <div className="mt-24 mb-12">
                         <CustomHeading title={'Portfolio'} />
                     </div>
-                    {listOfWorks.map((work) => (
-                        <Link to='/' key={work} className="flex justify-between items-center mt-12 p-10 text-zinc-900 dark:text-neutral-100 border border-purple-800 dark:border-yellow-400 rounded-lg">
+                    {listOfProjects.map((project) => (
+                        <Link to='/' key={project} className="flex justify-between items-center mt-12 p-10 text-zinc-900 dark:text-neutral-100 border border-purple-800 dark:border-yellow-400 rounded-lg">
                             <h1 className="font-bold text-3xl">
-                                {work}
+                                {project}
                             </h1>
                             <p className="text-xl">Click</p>
                         </Link>

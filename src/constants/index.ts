@@ -1,11 +1,11 @@
-export const listOfWorks = [
+export const listOfProjects = [
 	'Weather App',
 	'Unolingo',
 	'Car Showcase Website',
 	'Receipt Search App',
 ];
 
-export const portfolioWorks = [
+export const portfolio = [
 	{
 		projectName: 'Weather App',
 		projectDescription: 'Weather App',
@@ -21,7 +21,7 @@ export const portfolioWorks = [
 		projectLink: 'https://unolingo-tau.vercel.app/',
 	},
 	{
-		projectName: 'Car Showcase',
+		projectName: 'Car Showcase Website',
 		projectDescription: 'Car Showcase',
 		projectPreview: '/src/assets/images/carShowcasePreview.png',
 		projectImage: '',
@@ -44,7 +44,7 @@ export const portfolioWorks = [
 	{
 		projectName: 'Receipt Search App',
 		projectDescription: 'Receipt Search App',
-		projectPreview: '/src/assets/images/fitnessAppPreview.png',
+		projectPreview: '',
 		projectImage: '',
 		projectLink: '',
 	},
