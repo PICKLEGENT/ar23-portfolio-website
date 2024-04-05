@@ -12,14 +12,14 @@ const SmallInfo = ({ title, text }: SmallInfoProps) => {
         let iteration = 0;
 
         const interval = setInterval(() => {
-            text = text.split('').map((letter, index) => {
+            text = text.split('').map((_letter, index) => {
                 if (index < iteration) {
                     return tipToDecode[index];
                 }
 
                 return lettersENG[Math.floor(Math.random() * 26)]
             })
-                .join("");
+                .join('');
 
             if (iteration >= text.length) {
                 clearInterval(interval);
