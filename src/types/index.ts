@@ -12,6 +12,7 @@ export interface HomeProjectCardProps {
 }
 
 export interface CustomButtonProps {
+	type: 'submit' | 'button' | 'reset' | undefined;
 	title: string;
 }
 
@@ -21,6 +22,8 @@ export interface CustomInputProps {
 	name?: string;
 	placeholder?: string;
 	autocomplete?: string;
+	value?: string;
+	setState: () => void;
 }
 
 export interface TransitionProps {

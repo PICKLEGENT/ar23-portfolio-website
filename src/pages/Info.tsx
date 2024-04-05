@@ -1,3 +1,5 @@
+import { stack } from '../constants'
+import { Typewriter } from 'react-simple-typewriter'
 import { CustomHeading, Footer, Header } from "../components"
 
 const Info = () => {
@@ -11,21 +13,32 @@ const Info = () => {
                 <section className="mt-24">
                     <div>
                         <CustomHeading title={"Whats'up!"} />
-                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100">My name is Andrew. I'm 20 years old. I'm a frontend and JavaScript developer.</p>
+                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100 leading-relaxed">My name is <span className='text-purple-800 dark:text-yellow-400'>Andrew</span>. I'm 20 years old. I'm&nbsp;
+                            <span className='text-purple-800 dark:text-yellow-400'>
+                                <Typewriter
+                                    words={['a frontend developer.', 'a bit of a designer.', 'just a nice guy.']}
+                                    loop={0}
+                                    cursor
+                                    cursorStyle=''
+                                    typeSpeed={50}
+                                    deleteSpeed={25}
+                                    delaySpeed={1000}
+                                />
+                            </span>
+                        </p>
                     </div>
                     <div className="mt-12">
                         <CustomHeading title={"My stack:"} />
                         <ul className=" text-2xl text-zinc-900 dark:text-neutral-100">
-                            <li className="mt-6">Next.js</li>
-                            <li className="mt-6">Vue.js</li>
-                            <li className="mt-6">JavaScript</li>
-                            <li className="mt-6">TypeScript</li>
-                            <li className="mt-6">Vite</li>
-                            <li className="mt-6">Node.Js</li>
-                            <li className="mt-6">Tailwind CSS</li>
+                            {stack.map((item) => (
+                                <li key={item} className="mt-6">{item}</li>
+                            ))}
                         </ul>
                     </div>
-                    <p className="mt-12 text-2xl text-zinc-900 dark:text-neutral-100">Now I spend a lot of time on Next.js, but I also don't forget about Vue.js.</p>
+                    <div className="mt-12">
+                        <CustomHeading title={"Learning:"} />
+                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100">Now I spend a lot of time on Next.js, but I also don't forget about Vue.js.</p>
+                    </div>
                 </section>
                 <Footer />
             </main>

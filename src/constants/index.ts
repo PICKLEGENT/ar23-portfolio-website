@@ -5,6 +5,16 @@ export const listOfProjects = [
 	'Receipt Search App',
 ];
 
+export const stack = [
+	'Next.js',
+	'Vue.js',
+	'JavaScript',
+	'TypeScript',
+	'Vite',
+	'Node.js',
+	'Tailwind CSS',
+];
+
 export const portfolio = [
 	{
 		projectName: 'Weather App',
