@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 const Footer = () => {
+    const { t } = useTranslation()
+
     return (
         <footer className="mt-24">
             <section className="flex justify-between items-center text-2xl">
@@ -10,11 +14,11 @@ const Footer = () => {
             <section className="mt-24">
                 <div className="flex justify-between items-center">
                     <div className="mr-24">
-                        <h4 className="font-semibold text-sm text-neutral-500 uppercase">version</h4>
+                        <h4 className="font-semibold text-sm text-neutral-500 uppercase">{t('footerHeading_1')}</h4>
                         <p className="mt-5 text-lg font-bold text-zinc-900 dark:text-neutral-100">2024 Edition</p>
                     </div>
                     <div>
-                        <h4 className="font-semibold text-sm text-neutral-500 uppercase">socials</h4>
+                        <h4 className="font-semibold text-sm text-neutral-500 uppercase">{t('footerHeading_2')}</h4>
                         <div className="flex justify-start items-center font-bold">
                             <a href="https://github.com/PICKLEGENT" target="_blanc" className="mt-5 text-lg text-zinc-900 dark:text-neutral-100">GitHub</a>
                             <a href="https://t.me/AndrewRom" target="_blanc" className="mt-5 mx-12 text-lg text-zinc-900 dark:text-neutral-100">Telegam</a>
@@ -23,7 +27,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="text-center mt-24 font-semibold text-sm text-neutral-500">
-                    <p>Designed by<br />Andrew Romanov</p>
+                    <p>{t('designedBy')}<br />{t('fullName')}</p>
                 </div>
             </section>
         </footer>

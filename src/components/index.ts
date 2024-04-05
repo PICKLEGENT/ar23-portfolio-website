@@ -6,6 +6,7 @@ import SmallInfo from './SmallInfo';
 import ContactForm from './ContactForm';
 import CustomButton from './CustomButton';
 import CustomHeading from './CustomHeading';
+import LanguageChanger from './LanguageChanger';
 
 export {
 	Header,
@@ -16,4 +17,5 @@ export {
 	ContactForm,
 	CustomButton,
 	CustomHeading,
+	LanguageChanger,
 };

@@ -1,8 +1,11 @@
 import axios from "axios"
 import { useState } from "react"
 import CustomButton from "./CustomButton"
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
+    const { t } = useTranslation()
+
     const [name, setName] = useState<string>('')
     const [email, setEmail] = useState<string>('')
     const [organization, setOrganization] = useState<string>('')
@@ -46,12 +49,12 @@ const ContactForm = () => {
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0001</p>
                     <div className='w-[501px]'>
-                        <label htmlFor='user-name' className="block text-2xl text-purple-800 dark:text-yellow-400">What's your name?</label>
+                        <label htmlFor='user-name' className="block text-2xl text-purple-800 dark:text-yellow-400">{t('contactLabel_1')}</label>
                         <input
                             type="text"
                             name="user-name"
                             id="user-name"
-                            placeholder="John Doe"
+                            placeholder={t('contactPlaceholder_1')}
                             autoComplete="given-name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
@@ -62,12 +65,12 @@ const ContactForm = () => {
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0010</p>
                     <div className='w-[501px]'>
-                        <label htmlFor='user-email' className="block text-2xl text-purple-800 dark:text-yellow-400">What's your email?</label>
+                        <label htmlFor='user-email' className="block text-2xl text-purple-800 dark:text-yellow-400">{t('contactLabel_2')}</label>
                         <input
                             type="email"
                             name="user-email"
                             id="user-email"
-                            placeholder="john@doe.com"
+                            placeholder={t('contactPlaceholder_2')}
                             autoComplete="on"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -78,12 +81,12 @@ const ContactForm = () => {
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0011</p>
                     <div className='w-[501px]'>
-                        <label htmlFor='user-organization' className="block text-2xl text-purple-800 dark:text-yellow-400">What's the name of your organization?</label>
+                        <label htmlFor='user-organization' className="block text-2xl text-purple-800 dark:text-yellow-400">{t('contactLabel_3')}</label>
                         <input
                             type="text"
                             name="user-organization"
                             id="user-organization"
-                            placeholder="John & Doe"
+                            placeholder={t('contactPlaceholder_3')}
                             autoComplete="none"
                             value={organization}
                             onChange={(e) => setOrganization(e.target.value)}
@@ -94,13 +97,13 @@ const ContactForm = () => {
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0100</p>
                     <div className='w-[501px]'>
-                        <label htmlFor="message" className="block text-2xl text-purple-800 dark:text-yellow-400">Your message</label>
+                        <label htmlFor="message" className="block text-2xl text-purple-800 dark:text-yellow-400">{t('contactLabel_4')}</label>
                         <textarea
                             name="message"
                             id="message"
                             cols={48}
                             rows={5}
-                            placeholder="Hello Andrew..."
+                            placeholder={t('contactPlaceholder_4')}
                             autoComplete="none"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
@@ -111,7 +114,7 @@ const ContactForm = () => {
                 </li>
             </ul>
             <div className="flex justify-center items-center mt-12">
-                <CustomButton type={'submit'} title="Send" />
+                <CustomButton type={'submit'} title={t('contactButton')} />
             </div>
         </form>
     )

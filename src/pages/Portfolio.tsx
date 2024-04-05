@@ -1,14 +1,17 @@
 import { portfolio } from "../constants"
+import { useTranslation } from 'react-i18next'
 import { CustomHeading, Footer, Header } from "../components"
 
 
 const Portfolio = () => {
+    const { t } = useTranslation()
+
     return (
         <>
             <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
                 <Header />
                 <section className="mt-14 text-center">
-                    <CustomHeading title="My beautiful portfolio" />
+                    <CustomHeading title={t('portfolioCustomHeading')} />
                 </section>
                 <section>
                     <div className="flex flex-wrap justify-between items-center">

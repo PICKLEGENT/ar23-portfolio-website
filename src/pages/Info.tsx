@@ -1,25 +1,28 @@
 import { stack } from '../constants'
+import { useTranslation } from 'react-i18next'
 import { Typewriter } from 'react-simple-typewriter'
 import { CustomHeading, Footer, Header } from "../components"
 
 const Info = () => {
+    const { t } = useTranslation()
+
     return (
         <>
             <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
                 <Header />
                 <div className="mt-14 text-center">
-                    <CustomHeading title={"Information about me"} />
+                    <CustomHeading title={t('infoCustomHeading_1')} />
                 </div>
                 <section className="mt-24">
                     <div>
-                        <CustomHeading title={"Whats'up!"} />
-                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100 leading-relaxed">My name is <span className='text-purple-800 dark:text-yellow-400'>Andrew</span>. I'm 20 years old. I'm&nbsp;
+                        <CustomHeading title={t('infoCustomHeading_2')} />
+                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100 leading-relaxed">{t('myNameIs')}&nbsp;<span className='text-3xl text-purple-800 dark:text-yellow-400'>{t('name')}</span>.&nbsp;{t('age')}.&nbsp;{t('I')}&nbsp;
                             <span className='text-purple-800 dark:text-yellow-400'>
                                 <Typewriter
-                                    words={['a frontend developer.', 'a bit of a designer.', 'just a nice guy.']}
+                                    words={[`${t('infoTypewriterWords_1')}`, `${t('infoTypewriterWords_2')}`, `${t('infoTypewriterWords_3')}`]}
                                     loop={0}
                                     cursor
-                                    cursorStyle=''
+                                    cursorStyle='|'
                                     typeSpeed={50}
                                     deleteSpeed={25}
                                     delaySpeed={1000}
@@ -28,7 +31,7 @@ const Info = () => {
                         </p>
                     </div>
                     <div className="mt-12">
-                        <CustomHeading title={"My stack:"} />
+                        <CustomHeading title={t('infoCustomHeading_3')} />
                         <ul className=" text-2xl text-zinc-900 dark:text-neutral-100">
                             {stack.map((item) => (
                                 <li key={item} className="mt-6">{item}</li>
@@ -36,8 +39,8 @@ const Info = () => {
                         </ul>
                     </div>
                     <div className="mt-12">
-                        <CustomHeading title={"Learning:"} />
-                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100">Now I spend a lot of time on Next.js, but I also don't forget about Vue.js.</p>
+                        <CustomHeading title={t('infoCustomHeading_4')} />
+                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100">{t('infoLearning')}.</p>
                     </div>
                 </section>
                 <Footer />
