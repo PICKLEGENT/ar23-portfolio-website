@@ -11,14 +11,16 @@ i18n
 		resources: {
 			en: {
 				translation: {
-					navbar_1: 'info',
+					navbar_1: 'about',
 					navbar_2: 'portfolio',
 					navbar_3: 'contact',
 
 					ticker: 'portfolio website',
 
-					homeCustomHeading_1: "Hi! I'm Andrew",
-					homeCustomHeading_2: 'Portfolio',
+					homeCustomHeading_1: 'Hi!',
+					homeCustomHeading_2: "I'm",
+					homeCustomHeading_3: 'frontend developer.',
+					homeCustomHeading_4: 'Portfolio',
 
 					homeSmallInfoTitle_1: 'Who am I?',
 					homeSmallInfoTitle_2: 'What can I do?',
@@ -78,8 +80,10 @@ i18n
 
 					ticker: 'сайт портфолио',
 
-					homeCustomHeading_1: 'Привет! Меня зовут Андрей',
-					homeCustomHeading_2: 'Портфолио',
+					homeCustomHeading_1: 'Привет!',
+					homeCustomHeading_2: 'Меня зовут',
+					homeCustomHeading_3: 'фронтенд разработчик.',
+					homeCustomHeading_4: 'Портфолио',
 
 					homeSmallInfoTitle_1: 'Кто я?',
 					homeSmallInfoTitle_2: 'Что могу?',
