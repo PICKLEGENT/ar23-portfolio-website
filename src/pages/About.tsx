@@ -14,13 +14,14 @@ const About = () => {
             </Helmet>
             <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
                 <Header />
-                <div className="mt-14 text-center">
+                <div className="mt-36 text-center">
                     <CustomHeading title={t('infoCustomHeading_1')} />
                 </div>
                 <section className="mt-24">
                     <div>
                         <CustomHeading title={t('infoCustomHeading_2')} />
-                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100 leading-relaxed">{t('myNameIs')}&nbsp;<span className='text-3xl text-purple-800 dark:text-yellow-400'>{t('name')}</span>.&nbsp;{t('age')}.&nbsp;{t('I')}&nbsp;
+                        <p className="mt-12 text-4xl text-zinc-900 dark:text-neutral-100 leading-relaxed">{t('myNameIs')}&nbsp;
+                            <span className='font-bold text-5xl text-purple-800 dark:text-yellow-400'>{t('name')}</span>.&nbsp;{t('age')}.&nbsp;{t('I')}&nbsp;
                             <span className='text-purple-800 dark:text-yellow-400'>
                                 <Typewriter
                                     words={[`${t('infoTypewriterWords_1')}`, `${t('infoTypewriterWords_2')}`, `${t('infoTypewriterWords_3')}`]}
@@ -34,17 +35,17 @@ const About = () => {
                             </span>
                         </p>
                     </div>
-                    <div className="mt-12">
+                    <div className="mt-24">
                         <CustomHeading title={t('infoCustomHeading_3')} />
-                        <ul className=" text-2xl text-zinc-900 dark:text-neutral-100">
+                        <ul className=" text-4xl text-zinc-900 dark:text-neutral-100">
                             {stack.map((item) => (
-                                <li key={item} className="mt-6">{item}</li>
+                                <li key={item} className="mt-12">{item}</li>
                             ))}
                         </ul>
                     </div>
-                    <div className="mt-12">
+                    <div className="mt-24">
                         <CustomHeading title={t('infoCustomHeading_4')} />
-                        <p className="mt-6 text-2xl text-zinc-900 dark:text-neutral-100">{t('infoLearning')}.</p>
+                        <p className="mt-12 text-4xl text-zinc-900 dark:text-neutral-100">{t('infoLearning')}.</p>
                     </div>
                 </section>
                 <Footer />

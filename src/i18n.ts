@@ -54,7 +54,7 @@ i18n
 					contactButton: 'Send',
 
 					infoCustomHeading_1: 'About me',
-					infoCustomHeading_2: "Whats'up!",
+					infoCustomHeading_2: "I'm glad to see you!",
 					infoCustomHeading_3: 'My stack:',
 					infoCustomHeading_4: 'Learning:',
 
@@ -123,7 +123,7 @@ i18n
 					contactButton: 'Отправить',
 
 					infoCustomHeading_1: 'Обо мне',
-					infoCustomHeading_2: 'Привет!',
+					infoCustomHeading_2: 'Рад тебя видеть!',
 					infoCustomHeading_3: 'Мой стак:',
 					infoCustomHeading_4: 'Изучаю:',
 
