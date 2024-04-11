@@ -2,12 +2,16 @@ import { stack } from '../constants'
 import { useTranslation } from 'react-i18next'
 import { Typewriter } from 'react-simple-typewriter'
 import { CustomHeading, Footer, Header } from "../components"
+import { Helmet } from 'react-helmet'
 
-const Info = () => {
+const About = () => {
     const { t } = useTranslation()
 
     return (
         <>
+            <Helmet>
+                <title>{'AR23 | ' + t('title_2')}</title>
+            </Helmet>
             <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
                 <Header />
                 <div className="mt-14 text-center">
@@ -49,4 +53,4 @@ const Info = () => {
     )
 }
 
-export default Info
+export default About

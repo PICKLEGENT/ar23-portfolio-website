@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet"
 import { portfolio } from "../constants"
 import { useTranslation } from 'react-i18next'
 import { CustomHeading, Footer, Header } from "../components"
@@ -8,6 +9,9 @@ const Portfolio = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{'AR23 | ' + t('title_3')}</title>
+            </Helmet>
             <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
                 <Header />
                 <section className="mt-14 text-center">

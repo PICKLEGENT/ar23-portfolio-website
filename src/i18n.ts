@@ -11,9 +11,10 @@ i18n
 		resources: {
 			en: {
 				translation: {
-					navbar_1: 'about',
-					navbar_2: 'portfolio',
-					navbar_3: 'contact',
+					title_1: 'Hello',
+					title_2: 'About',
+					title_3: 'Portfolio',
+					title_4: 'Contact',
 
 					ticker: 'portfolio website',
 
@@ -79,9 +80,10 @@ i18n
 			},
 			ru: {
 				translation: {
-					navbar_1: 'инфо',
-					navbar_2: 'портфолио',
-					navbar_3: 'связь',
+					title_1: 'Привет',
+					title_2: 'Обо мне',
+					title_3: 'Портфолио',
+					title_4: 'Связь',
 
 					ticker: 'сайт портфолио',
 
