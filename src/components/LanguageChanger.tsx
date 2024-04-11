@@ -2,33 +2,32 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const LanguageChanger = () => {
-    const [lang, setLang] = useState(true)
+    const [lng, setLang] = useState(true)
 
     const { i18n } = useTranslation();
 
-    const changeLanguage = () => {
-        setLang(!lang)
-        i18n.changeLanguage(lang === true ? ('ru') : ('en'));
-    };
+    const lngCode = localStorage.getItem('i18nextLng')
 
-    const width: number = 250
-    const radius: number = 100
+    const changeLanguage = () => {
+        setLang(!lng)
+        i18n.changeLanguage(lng === true ? ('ru') : ('en'));
+    };
 
     return (
         <>
             <button onClick={() => changeLanguage()}>
-                {lang === true ?
-                    <div className={`flex justify-start items-center w-[${width}px] bg-yellow-400 rounded-full`}>
+                {lngCode === 'en' ?
+                    <div className={`flex justify-start items-center w-[250px] bg-purple-800 dark:bg-yellow-400 rounded-full`}>
                         <div
-                            className={`flex justify-center items-center w-[${radius}px] h-[${radius}px] m-1 text-xl bg-zinc-900 rounded-full uppercase`}
+                            className={`flex justify-center items-center w-[100px] h-[100px] m-1 text-xl bg-zinc-100 dark:bg-zinc-900 rounded-full uppercase`}
                         >
                             eng
                         </div>
                     </div>
                     :
-                    <div className={`flex justify-end items-center w-[${width}px] bg-yellow-400 rounded-full`}>
+                    <div className={`flex justify-end items-center w-[250px] bg-purple-800 dark:bg-yellow-400 rounded-full`}>
                         <div
-                            className={`flex justify-center items-center w-[${radius}px] h-[${radius}px] m-1 text-xl bg-zinc-900 rounded-full uppercase`}
+                            className={`flex justify-center items-center w-[100px] h-[100px] m-1 text-xl bg-zinc-100 dark:bg-zinc-900 rounded-full uppercase`}
                         >
                             rus
                         </div>

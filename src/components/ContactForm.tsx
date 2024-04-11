@@ -48,40 +48,40 @@ const ContactForm = () => {
             <ul>
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0001</p>
-                    <div className='w-[501px]'>
-                        <label htmlFor='user-name' className="block text-2xl text-purple-800 dark:text-yellow-400">{t('contactLabel_1')}</label>
+                    <div>
+                        <label htmlFor='user-name' className="block text-4xl text-purple-800 dark:text-yellow-400">{t('contactLabel_1')}</label>
                         <input
                             type="text"
                             name="user-name"
                             id="user-name"
                             placeholder={t('contactPlaceholder_1')}
-                            autoComplete="given-name"
+                            autoComplete="none"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            className="mt-5 pb-2 w-full text-xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900"
+                            className="mt-12 pb-2 w-full text-2xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
                         />
                     </div>
                 </li>
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0010</p>
-                    <div className='w-[501px]'>
-                        <label htmlFor='user-email' className="block text-2xl text-purple-800 dark:text-yellow-400">{t('contactLabel_2')}</label>
+                    <div>
+                        <label htmlFor='user-email' className="block text-4xl text-purple-800 dark:text-yellow-400">{t('contactLabel_2')}</label>
                         <input
                             type="email"
                             name="user-email"
                             id="user-email"
                             placeholder={t('contactPlaceholder_2')}
-                            autoComplete="on"
+                            autoComplete="none"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className="mt-5 pb-2 w-full text-xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900"
+                            className="mt-12 pb-2 w-full text-2xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
                         />
                     </div>
                 </li>
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0011</p>
-                    <div className='w-[501px]'>
-                        <label htmlFor='user-organization' className="block text-2xl text-purple-800 dark:text-yellow-400">{t('contactLabel_3')}</label>
+                    <div>
+                        <label htmlFor='user-organization' className="block text-4xl text-purple-800 dark:text-yellow-400">{t('contactLabel_3')}</label>
                         <input
                             type="text"
                             name="user-organization"
@@ -90,30 +90,30 @@ const ContactForm = () => {
                             autoComplete="none"
                             value={organization}
                             onChange={(e) => setOrganization(e.target.value)}
-                            className="mt-5 pb-2 w-full text-xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900"
+                            className="mt-12 pb-2 w-full text-2xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
                         />
                     </div>
                 </li>
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-12 text-2xl text-purple-800 dark:text-yellow-400">0100</p>
-                    <div className='w-[501px]'>
-                        <label htmlFor="message" className="block text-2xl text-purple-800 dark:text-yellow-400">{t('contactLabel_4')}</label>
+                    <div>
+                        <label htmlFor="message" className="block text-4xl text-purple-800 dark:text-yellow-400">{t('contactLabel_4')}</label>
                         <textarea
                             name="message"
                             id="message"
-                            cols={48}
+                            cols={50}
                             rows={5}
                             placeholder={t('contactPlaceholder_4')}
                             autoComplete="none"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
-                            className="mt-5 pb-2 text-xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 resize-none"
+                            className="mt-12 pb-2 text-2xl text4-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in resize-none"
                         >
                         </textarea>
                     </div>
                 </li>
             </ul>
-            <div className="flex justify-center items-center mt-12">
+            <div className="flex justify-center items-center mt-24">
                 <CustomButton type={'submit'} title={t('contactButton')} />
             </div>
         </form>

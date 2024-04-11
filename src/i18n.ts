@@ -17,6 +17,11 @@ i18n
 
 					ticker: 'portfolio website',
 
+					homeBanner_1: 'Web developer',
+					homeBanner_2: 'Frontend',
+					homeBanner_3: 'I code beautifully simple things and I love it',
+					homeBanner_4: 'Contact me',
+
 					homeCustomHeading_1: 'Hi!',
 					homeCustomHeading_2: "I'm",
 					homeCustomHeading_3: 'frontend developer.',
@@ -79,6 +84,11 @@ i18n
 					navbar_3: 'связь',
 
 					ticker: 'сайт портфолио',
+
+					homeBanner_1: 'Веб разработчик',
+					homeBanner_2: 'Фронтенд',
+					homeBanner_3: 'Прогаю классные вещи и люблю это дело',
+					homeBanner_4: 'Связаться',
 
 					homeCustomHeading_1: 'Привет!',
 					homeCustomHeading_2: 'Меня зовут',

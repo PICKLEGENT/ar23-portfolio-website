@@ -4,7 +4,7 @@ const Footer = () => {
     const { t } = useTranslation()
 
     return (
-        <footer className="mt-24">
+        <footer className="mt-36">
             <section className="flex justify-between items-center text-2xl">
                 <div className="h-[1px] bg-purple-800 dark:bg-yellow-400 w-1/4"></div>
                 <a href="mailto:romanov.resume@yandex.ru" className="mx-2.5 2xl:mx-0 text-purple-800 dark:text-yellow-400">romanov.resume@yandex.ru</a>
