@@ -2,12 +2,22 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+const systemLng = navigator.language;
+
+let lng;
+
+if (systemLng === 'ru-RU') {
+	lng = 'ru';
+} else {
+	lng = 'en';
+}
+
 i18n
 	.use(LanguageDetector)
 	.use(initReactI18next)
 	.init({
 		debug: false,
-		lng: 'en',
+		lng: lng,
 		resources: {
 			en: {
 				translation: {
