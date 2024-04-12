@@ -14,27 +14,28 @@ const Portfolio = () => {
             </Helmet>
             <main className="px-16 lg:px-52 py-16 tracking-wider bg-neutral-100 dark:bg-zinc-900">
                 <Header />
-                <section className="mt-14 text-center">
+                <section className="mt-36 text-center">
                     <CustomHeading title={t('portfolioCustomHeading')} />
                 </section>
                 <section>
-                    <div className="flex flex-wrap justify-between items-center">
+                    <div className="flex flex-wrap justify-center mt-24 gap-12">
                         {portfolio.map((project, index) => (
                             <div
                                 key={index}
                                 style={{
                                     background: `${portfolio ? `URL(${project.projectPreview})` : 'transparent'}`,
-                                    backgroundSize: 'cover',
+                                    backgroundSize: 'contain',
                                     backgroundRepeat: 'no-repeat',
-                                    backgroundPosition: 'center'
+                                    backgroundPosition: 'top'
                                 }}
-                                className="flex justify-center items-center mt-12 w-[400px] h-[250px] border border-purple-800 dark:border-yellow-400 rounded-lg"
+                                className="flex justify-start items-end lg:w-[600px] lg:h-[400px] border-2 border-purple-800 dark:border-yellow-400 rounded-lg overflow-hidden"
                             >
                                 <h1
-                                    className="p-2.5 text-3xl text-purple-800 dark:text-yellow-400 border border-purple-800 dark:border-yellow-400 bg-neutral-100 dark:bg-zinc-900 rounded-lg">
+                                    className="p-5 w-full font-bold text-4xl text-zinc-900 dark:text-neutral-100 border-t-2 border-purple-800 dark:border-yellow-400 bg-neutral-100 dark:bg-zinc-900">
                                     {project.projectName}
                                 </h1>
                             </div>
+
                         ))}
                     </div>
                 </section>

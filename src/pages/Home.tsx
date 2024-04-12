@@ -51,18 +51,21 @@ const Home = () => {
                     </div>
                 </section>
                 <section className="mt-36">
-                    <div className="mb-12">
+                    <div>
                         <CustomHeading title={t('homeCustomHeading_4')} />
                     </div>
-                    {listOfProjects.map((project) => (
-                        <Link to='/' key={project} className="flex justify-between items-center mt-12 p-10 text-zinc-900 dark:text-neutral-100 border border-purple-800 dark:border-yellow-400 rounded-lg">
-                            <h1 className="font-bold text-3xl">
-                                {project}
-                            </h1>
-                            <p className="text-xl capitalize">{t('homeClick')}</p>
-                        </Link>
-                    ))}
-                    <div className="mt-12 text-center font-bold text-2xl text-purple-800 dark:text-yellow-400">
+                    <div className="flex flex-wrap justify-center mt-24 gap-12">
+                        {listOfProjects.map((project) => (
+                            <Link to='/portfolio'
+                                key={project}
+                                className="flex justify-center items-center text-center p-10 w-96 text-zinc-900 dark:text-neutral-100 border-2 border-purple-800 dark:border-yellow-400 rounded-full">
+                                <h1 className="font-bold text-4xl">
+                                    {project}
+                                </h1>
+                            </Link>
+                        ))}
+                    </div>
+                    <div className="mt-24 text-center font-bold text-2xl text-purple-800 dark:text-yellow-400">
                         <Link to='/contact' className="p-5 border-2 border-purple-800 dark:border-yellow-400 rounded-full">{t('homeLink')}</Link>
                     </div>
                 </section>
