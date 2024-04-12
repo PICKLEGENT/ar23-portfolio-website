@@ -8,8 +8,10 @@ let lng;
 
 if (systemLng === 'ru-RU') {
 	lng = 'ru';
+	localStorage.setItem('i18nextLng', 'ru');
 } else {
 	lng = 'en';
+	localStorage.setItem('i18nextLng', 'en');
 }
 
 i18n

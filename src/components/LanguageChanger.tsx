@@ -1,16 +1,13 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const LanguageChanger = () => {
-    const [lng, setLang] = useState(true)
-
     const { i18n } = useTranslation();
 
     const lngCode = localStorage.getItem('i18nextLng')
 
     const changeLanguage = () => {
-        setLang(!lng)
-        i18n.changeLanguage(lng === true ? ('ru') : ('en'));
+        i18n.changeLanguage(lngCode === 'ru' ? ('en') : ('ru'));
     };
 
     return (

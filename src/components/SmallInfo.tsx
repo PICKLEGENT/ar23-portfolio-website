@@ -1,38 +1,38 @@
-import { useEffect, useState } from "react";
 import { SmallInfoProps } from "../types"
+// import { useEffect, useState } from "react";
 
 const SmallInfo = ({ title, text }: SmallInfoProps) => {
-    const [decodeString, setDecodeString] = useState('')
+    // const [decodeString, setDecodeString] = useState('')
 
-    const lettersENG = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    // const lettersENG = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    const tipToDecode = text
+    // const tipToDecode = text
 
-    const decode = () => {
-        let iteration = 0;
+    // const decode = () => {
+    //     let iteration = 0;
 
-        const interval = setInterval(() => {
-            text = text.split('').map((_letter, index) => {
-                if (index < iteration) {
-                    return tipToDecode[index];
-                }
+    //     const interval = setInterval(() => {
+    //         text = text.split('').map((_letter, index) => {
+    //             if (index < iteration) {
+    //                 return tipToDecode[index];
+    //             }
 
-                return lettersENG[Math.floor(Math.random() * 26)]
-            })
-                .join('');
+    //             return lettersENG[Math.floor(Math.random() * 26)]
+    //         })
+    //             .join('');
 
-            if (iteration >= text.length) {
-                clearInterval(interval);
-            }
+    //         if (iteration >= text.length) {
+    //             clearInterval(interval);
+    //         }
 
-            iteration += 1 / 3;
-            setDecodeString(text)
-        }, 30);
-    }
+    //         iteration += 1 / 3;
+    //         setDecodeString(text)
+    //     }, 30);
+    // }
 
-    useEffect(() => {
-        decode()
-    }, [])
+    // useEffect(() => {
+    //     decode()
+    // }, [])
 
     return (
         <div>
@@ -40,7 +40,7 @@ const SmallInfo = ({ title, text }: SmallInfoProps) => {
                 {title}
             </h2>
             <p className="small-info__text mt-4 text-4xl text-zinc-900 dark:text-neutral-100">
-                {decodeString}
+                {text}
             </p>
         </div>
     )
