@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Route, Routes, useLocation } from "react-router-dom"
 import { Contact, Home, About, Portfolio, Project } from "./pages"
 
@@ -7,7 +6,6 @@ const App = () => {
 
   return (
     <>
-      <SpeedInsights />
       <Routes location={location} key={location.pathname}>
         <Route path="/" Component={Home} />
         <Route path="/about" Component={About} />
