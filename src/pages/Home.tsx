@@ -66,7 +66,7 @@ const Home = () => {
                         ))}
                     </div>
                     <div className="mt-12 lg:mt-24 text-center font-bold text-xl lg:text-2xl text-purple-800 dark:text-yellow-400">
-                        <Link to='/contact' className="p-3.5 lg:p-5 border-2 border-purple-800 dark:border-yellow-400 rounded-full">{t('homeLink')}</Link>
+                        <Link to='/portfolio' className="p-3.5 lg:p-5 border-2 border-purple-800 dark:border-yellow-400 rounded-full">{t('homeLink')}</Link>
                     </div>
                 </section>
                 <Footer />
