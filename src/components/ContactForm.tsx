@@ -63,14 +63,14 @@ const ContactForm = () => {
                             autoComplete="none"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            className="mt-6 lg:mt-12 pb-2 w-full text-xl lg:text-2xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
+                            className="mt-6 lg:mt-12 pb-2 w-full text-xl lg:text-2xl text-zinc-900 dark:text-neutral-100 border-b-0 lg:border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
                         />
                     </div>
                 </li>
                 <li className="mt-12 flex justify-start items-start">
                     <p className="mr-6 lg:mr-12 text-xl lg:text-2xl text-purple-800 dark:text-yellow-400">0010</p>
                     <div>
-                        <label htmlFor='user-email' className="block text-xl lg:text-2xl lg:text-4xl text-purple-800 dark:text-yellow-400">{t('contactLabel_2')}</label>
+                        <label htmlFor='user-email' className="block text-2xl lg:text-4xl text-purple-800 dark:text-yellow-400">{t('contactLabel_2')}</label>
                         <input
                             type="email"
                             name="user-email"
@@ -79,7 +79,7 @@ const ContactForm = () => {
                             autoComplete="none"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className="mt-6 lg:mt-12 pb-2 w-full text-xl lg:text-2xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
+                            className="mt-6 lg:mt-12 pb-2 w-full text-xl lg:text-2xl text-zinc-900 dark:text-neutral-100 border-b-0 lg:border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
                         />
                     </div>
                 </li>
@@ -95,7 +95,7 @@ const ContactForm = () => {
                             autoComplete="none"
                             value={organization}
                             onChange={(e) => setOrganization(e.target.value)}
-                            className="mt-6 lg:mt-12 pb-2 w-full text-xl lg:text-2xl text-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
+                            className="mt-6 lg:mt-12 pb-2 w-full text-xl lg:text-2xl text-zinc-900 dark:text-neutral-100 border-b-0 lg:border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in"
                         />
                     </div>
                 </li>
@@ -106,13 +106,13 @@ const ContactForm = () => {
                         <textarea
                             name="message"
                             id="message"
-                            cols={50}
+                            cols={window.innerWidth >= 1024 ? 50 : 20}
                             rows={5}
                             placeholder={t('contactPlaceholder_4')}
                             autoComplete="none"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
-                            className="mt-6 lg:mt-12 pb-2 text-xl lg:text-2xl text4-zinc-900 dark:text-neutral-100 border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in resize-none"
+                            className="mt-6 lg:mt-12 pb-2 text-xl lg:text-2xl text4-zinc-900 dark:text-neutral-100 border-b-0 lg:border-b border-neutral-500 bg-neutral-100 dark:bg-zinc-900 focus:border-purple-800 focus:dark:border-yellow-400 duration-300 ease-in resize-none"
                         >
                         </textarea>
                     </div>
