@@ -36,10 +36,10 @@ const SmallInfo = ({ title, text }: SmallInfoProps) => {
 
     return (
         <div>
-            <h2 className="font-bold text-7xl text-purple-800 dark:text-yellow-400">
+            <h2 className="font-bold text-4xl lg:text-7xl text-purple-800 dark:text-yellow-400">
                 {title}
             </h2>
-            <p className="small-info__text mt-4 text-4xl text-zinc-900 dark:text-neutral-100">
+            <p className="small-info__text mt-4 text-2xl lg:text-4xl text-zinc-900 dark:text-neutral-100">
                 {text}
             </p>
         </div>

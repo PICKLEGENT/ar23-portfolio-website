@@ -120,7 +120,7 @@ i18n
 					homeClick: 'клик',
 					homeLink: 'Больше',
 
-					contactCustomHeading: 'Отправь мне сообщение. Почитаю.',
+					contactCustomHeading: 'Напиши мне. Почитаю.',
 
 					contactLabel_1: 'Как Вас зовут?',
 					contactLabel_2: 'Какой у Вас email?',
